@@ -1,18 +1,12 @@
 # Module Summary
 
-## Authentication
+## Password Resetting
 
-- Authentication means that not every visitor of the page can view and interact with everything
-- Authentication has to happen on the server-side and builds up on sessions
-- you can protect routes by checking the (session-controlled) login status right before you access a controller action
+- Password reseting has to be implemented in a way that prevents users from resetting random users accounts
+- Reset tokens have to be a random, unguessable and unique
 
-## Security & UX
+## Authorization
 
-- Passwords should be stored in a hashed form
-- CSRF attacks are a real issue and you should therefore include CSRF protection in ANY application you build
-- For a better user experience, you can flash data / message into the session eich you then can display in your views
-
-## Useful Resources & Links
-
-- [Bcrypt Official Docs](https://github.com/dcodeIO/bcrypt.js)
-- [More on CSRF Attacks](https://www.acunetix.com/websitesecurity/csrf-attacks/)
+- Authorization is an important part of pretty much every app
+- Not every authenticated user should be able to do everything
+- Istead, you want to lock down access by restricting the permissions of your users
