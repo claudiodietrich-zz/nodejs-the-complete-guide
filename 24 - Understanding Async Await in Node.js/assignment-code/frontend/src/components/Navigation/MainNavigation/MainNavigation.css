@@ -1,0 +1,23 @@
+.main-nav {
+  height: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.main-nav__items {
+  list-style: none;
+  padding: 0;
+  margin: 0 1.5rem;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav__items {
+    display: flex;
+  }
+}

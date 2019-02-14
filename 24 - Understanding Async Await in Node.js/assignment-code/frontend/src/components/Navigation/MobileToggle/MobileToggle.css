@@ -1,0 +1,24 @@
+.mobile-toggle {
+  background: transparent;
+  border: none;
+  display: flex;
+  width: 2.5rem;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 1rem;
+}
+
+.mobile-toggle__bar {
+  width: 2.5rem;
+  height: 4px;
+  background: white;
+}
+
+@media (min-width: 768px) {
+    .mobile-toggle {
+        display: none;
+    }
+}

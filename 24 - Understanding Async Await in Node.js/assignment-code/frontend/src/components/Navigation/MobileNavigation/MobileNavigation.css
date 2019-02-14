@@ -1,0 +1,29 @@
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 30rem;
+  max-width: 90%;
+  background: white;
+  box-shadow: 1px 0 8px rbga(0, 0, 0, 0.26);
+  transition: transform 0.3s ease-out;
+  transform: translateX(-100%);
+  z-index: 200;
+  padding: 3rem 2rem;
+}
+
+.mobile-nav.open {
+  transform: translateX(0);
+}
+
+.mobile-nav__items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav__items.mobile {
+    flex-direction: column;
+}
