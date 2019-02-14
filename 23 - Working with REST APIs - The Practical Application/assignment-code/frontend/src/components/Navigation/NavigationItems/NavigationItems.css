@@ -1,0 +1,41 @@
+.navigation-item {
+  padding: 0 1.5rem;
+}
+
+.navigation-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation-item.mobile {
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+}
+
+.navigation-item.mobile a {
+  color: #3b0062;
+}
+
+.navigation-item a:hover,
+.navigation-item a:active,
+.navigation-item a.active {
+  color: #fab83f;
+}
+
+.navigation-item:last-of-type {
+  padding-right: 0;
+}
+
+.navigation-item button {
+  font: inherit;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navigation-item button:hover,
+.navigation-item button:active {
+  color: #fab83f;
+}
